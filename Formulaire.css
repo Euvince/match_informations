@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #f7f7f7;
+}
+
+.container{
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    background: #fff;
+    width: 365px;
+    border-radius: 8px 8px 8px 8px;
+    padding: 14px;
+    box-shadow: 0 0 128px 0 rgba(0,0,0,0.1),
+                0 32px 64px -48px rgba(0,0,0,0.5);
+}
+
+form input{
+    height: 46px;
+    width: 100%;
+    padding: 0 10px;
+    margin: 10px 0 10px 0;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #F2F2F2;
+    outline: none;
+}
+
+form label{
+    font-size: 13px;
+    margin-left: 4px;
+}
+
+.fichier_logo_one, .fichier_logo_two{
+    padding: 10px 10px;
+    font-size: 15px;
+}
+
+form input::placeholder{
+    font-size: 14px;
+}
+
+form .sign-in-btn{
+    height: 46px;
+    width: 100%;
+    padding: 0 10px;
+    margin: 10px 0 10px 0;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #2962FF;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    cursor: pointer;
+}
+
+form .sign-in-btn:hover{
+    background: #1565C0;
+}
+
+footer{
+    display: flex;
+    margin-top: 15px;
+    text-align: center;
+    justify-content: center;
+}
+footer h4{
+    margin-right: 6px;
+}
+
+
+@media screen and (max-width:410px){
+
+    form{
+        width: 80%;
+    }
+
+    form input{
+        height: 40px;
+    }
+
+    form label{
+        font-size: 11px;
+    }
+
+    form input::placeholder{
+        font-size: 12px;
+    }
+
+    form .sign-in-btn{
+        height: 40px;
+    }
+
+    .fichier_logo_one, .fichier_logo_two{
+        font-size: 11px;
+        padding: 12px 10px;
+    }
+
+    footer{
+        width: 80%;
+    }
+}
